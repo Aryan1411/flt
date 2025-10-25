@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="E-Content: FLT Coaching Mihona - Video lectures for Class 1 to 12 in Mathematics, Science, English, Hindi and more. Filter by class and subject.">
+  <meta name="keywords" content="FLT Coaching, FLT Coaching Mihona, video lectures, class 1, class 12, e-content, Mathematics, Science, Hindi, English, CBSE, State Board">
+  <title>E-Content - FLT Coaching</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo"><span>FLT</span> Coaching</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="econtent.html">E-Content</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h1>Video Lectures Library</h1>
+    <p>Access video lectures for all classes and subjects.</p>
+  </div>
+
+  <div class="container">
+    <section>
+      <h2 class="section-title">Video Lectures Library</h2>
+      <div class="filters-container">
+        <div class="filter-group">
+          <label for="classFilter">Class:</label>
+          <select id="classFilter" onchange="filterVideos()">
+            <option value="">All Classes</option>
+            <option value="1">Class 1</option>
+            <option value="2">Class 2</option>
+            <option value="3">Class 3</option>
+            <option value="4">Class 4</option>
+            <option value="5">Class 5</option>
+            <option value="6">Class 6</option>
+            <option value="7">Class 7</option>
+            <option value="8">Class 8</option>
+            <option value="9">Class 9</option>
+            <option value="10">Class 10</option>
+            <option value="11">Class 11</option>
+            <option value="12">Class 12</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="subjectFilter">Subject:</label>
+          <select id="subjectFilter" onchange="filterVideos()">
+            <option value="">All Subjects</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Science">Science</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Biology">Biology</option>
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Social Science">Social Science</option>
+            <option value="History">History</option>
+            <option value="Geography">Geography</option>
+            <option value="Economics">Economics</option>
+            <option value="Political Science">Political Science</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="searchInput">Search:</label>
+          <input type="text" id="searchInput" placeholder="Search by topic or lecture name..." oninput="filterVideos()">
+          <button onclick="filterVideos()">Search</button>
+        </div>
+      </div>
+
+      <div id="videosContainer" class="videos-grid"></div>
+      <div id="noResults" class="no-results" style="display:none;">No videos found matching your criteria. Please try different filters.</div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>FLT Coaching</h3>
+        <p>Empowering students with quality education and expert guidance for a brighter future.</p>
+        <p>Established as a trusted name in education in Mihona, Bhind.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="econtent.html">E-Content</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-section">
+        <h3>Courses Offered</h3>
+        <p>Class 1 to 12 - All Subjects</p>
+        <p>CBSE Board</p>
+        <p>State Board (All States)</p>
+        <p>Hindi & English Medium</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>📍 Near Swaraj Agency, Machhand Mod, Mihona, Bhind - 477001</p>
+        <p>📞 +91 7389032979</p>
+        <p>📞 +91 9074135235</p>
+        <p>📞 +91 7067292918</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 FLT Coaching Mihona. All rights reserved.</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
