@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Sitemap: https://aryan1411.github.io/flt/sitemap.xml
+
+# Allow search engines to access all content
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
+
+# Prevent indexing of search results pages
+Disallow: /search/
+Disallow: /*?q=*
